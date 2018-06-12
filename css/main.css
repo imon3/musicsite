@@ -73,13 +73,15 @@ header nav a{
 }
 
 #top-section .sean-img{
-	width: 50%;
-	height: 90%;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 75px;
 }
 
 #top-section .sean-img img{
-	width: 100%;
-	height: 100%;
+	width: 400px;
+	height: 400px;
 	filter: contrast(120%);
 }
 
@@ -231,7 +233,78 @@ header nav a{
 	width: 50%;
 }
 
+/*-----MEDIA QUERIY MAX-WIDTH 768PX--------*/
+@media(max-width: 768px){
+	#top-section .sean-img{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 75px;
+	}
 
+	#music{
+		width: 100%;
+	}
+
+	#music .container{
+		display: grid;
+		grid-auto-rows: minmax(100px, auto);
+	}
+
+	#music .container .info{
+		width: 100%;
+	}
+
+	#music .container .info .title{
+		text-align: center;	
+	}
+
+	#music .container .info .singles{
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+
+	#music .container .album-cover{
+		display: block;
+		width: 100%;
+		text-align: center;
+		grid-row: 1/2;
+		padding-bottom: 2rem;
+	}
+}
+
+/*---------MEDIA QUERY MAX-WIDTH 650PX---------- */
+@media(max-width: 650px){
+	#media .container .videos{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
+
+/*--------MEDIA QUERY MAX-WIDTH 640PX----------*/
+@media(max-width: 640px){
+	header .logo{
+		padding-top: 10px;
+	}
+
+	header nav{
+		display: grid;
+	}
+
+	header nav a{
+		padding-top: 10px;
+	}
+}
+
+/*--------MEDIA QUERY MAX-WIDTH 420PX----*/
+@media(max-width: 420px){
+	#top-section .sean-img img{
+	width: 20rem;
+	height: 20rem;
+	filter: contrast(120%);
+	}
+}
 
 
 
